@@ -1,0 +1,22 @@
+:root{
+	--color-neutral-light: #f0ecec;
+	--color-neutral-medium: #9e8d8d;
+	--color-neutral-dark: #392f2f;
+}
+
+body{
+	font-family: Calibri, sans-serif;
+	background-color:  #f9f9f9;
+}
+.view-window>h2 {
+	position: absolute; 
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background-color: rgba(0, 0, 0, 0.3);
+	padding: 1em;
+	border-radius: 1em;
+	color: #fff;
+	font-size: 3em;
+	
+}

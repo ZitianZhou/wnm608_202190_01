@@ -1,0 +1,123 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+:root {
+	--color-neutral-light: #eee;
+	--color-neutral-medium: #999;
+	--color-neutral-dark: #444;
+ 	
+ 	--color-white: #fff;
+ 	--color-black: #000;
+	
+	--header-height: 3rem;
+	--border-width: 2em;
+}
+
+body {
+	margin: 0;
+	font-size: 100%;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: Cambria, Georgia, "Times New Roman", serif;
+}
+
+a {
+	text-decoration:  none;
+	font-weight: bold;
+	color: inherit;
+
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* layout class */
+.container {
+	max-width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.hidden {
+	display: none;
+}
+
+.display-flex { display: flex; }
+.display-block { display: block; }
+.display-inline-flex { display: inline-flex; }
+.display-inline-block { display: inline-block; }
+
+.flex-stretch { flex: 1 1 auto; }
+.flex-none { flex: none; }
+
+.flex-align-center { align-items: center; }
+.flex-justify-center { justify-content: center; }
+
+
+/* component classes */
+.nav ul{
+	list-style-type: none;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+
+.navbar {
+	background-color: var(--color-neutral-dark);
+	color: var(--color-neutral-light);
+	line-height: var(--header-height);
+}
+
+.navbar h1 {
+	font-size: 1em;
+	font-family: Helvetica, Arial, sans-serif;
+	margin: 0;
+}
+
+.navbar a{
+	padding: 0 0.5em;
+}
+
+.view-window{
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 70vh;
+}
+
+.card{
+	background-color:  var(--color-white);
+	padding:  1em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	position: relative;
+	overflow: hidden;
+}
+
+.card.soft{
+	border-radius: 0.5em;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card.hard{
+	border-radius: 0.2em;
+	border: 2px solid var(--color-neutral-medium);
+}
+
+.card.dark {
+	background-color: var(--color-neutral-dark);
+	color: var(--color-white);
+}
+
+.card.medium{
+	background-color: var(--color-neutral-medium);
+}
+
+.card.flat{
+	padding: 0;
+}
