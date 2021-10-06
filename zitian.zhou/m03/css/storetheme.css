@@ -52,3 +52,59 @@ body{
 		font-size: 1em;
 	}
 } 
+.product-item{
+	margin:  0;
+	border-radius: 0.7em;
+	background-color: #fff;
+	box-shadow: 1px 1px 12px rgba(0,0,0,0.2);
+	padding: 1em;
+	transition: all 0.3s;
+}
+.product-item:hover{
+	box-shadow: 1px 1px 12px rgba(0,0,0,0.4);
+}
+.product-image img {
+	width: 100%;
+}
+.product-price,
+.product-title{
+	font-weight: normal;
+}
+a:hover .product-item{
+	text-decoration: none !important;
+}
+.product-price{
+	font-size: 1.2em;
+	padding: 0.2em 0.4em;
+}
+.product-title{
+	font-size: 0.9em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

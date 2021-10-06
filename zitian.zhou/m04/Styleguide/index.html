@@ -36,11 +36,12 @@
 				</li>
 				<li><a href="styleguide/#card">Card</a></li>
 				<li><a href="styleguide/#navigations">Navigations</a></li>
+				<li><a href="styleguide/#tables">Tables</a></li>
 			</ul>
 		</div>
 	</nav>
 
-	<div class="containder" id="typography">
+	<div class="container" id="typography">
 		<h2>Typography</h2>
 		<div class="card soft">
 			<h3>Headings</h3>
@@ -277,7 +278,7 @@
 	</div>
 </div>
 
-<div class="comtainer" id="card">
+<div class="container" id="card">
 	<h2>Card</h2>
 
 	<div class="well">
@@ -364,5 +365,267 @@
 		<script>makeNav('nav crumbs')</script>
 	</div>
 </div>
+
+<!-- Tables -->
+<script>
+	const makeTable = (classes='') => {
+	const head = ['ID', 'Name', 'Email', 'Phone'];
+	const body = [
+	['501', 'Zitian', 'zitian@email.com' ,'888-8888'],
+	['502', 'Laurel', 'laurel@email.com' ,'555-5555'],
+	['503', 'Harris', 'harris@email.com' ,'333-3333'],
+	];
+
+	document.write(`
+		<table class="${classes}"
+			<thead><tr>${head.reduce((r,0)=>r+`<th>${o}</th>`,'')}</tr></thead>
+			<tbody>
+			${body.reduce((r,o,i)=>r+
+				`<tr>${[i+1,...o].reduce((r,o)=>r+`<td>${o}</td>`,'')}</tr>`,'')}
+			</tbody>
+		</table>
+		`)}
+</script>
+
+
+<div class="container" id="tables">
+	<h2>Tables</h2>
+	<div class="card soft">
+		<h3>Basic Table</h3>
+		<script>makeTable('table')</script>
+	</div>
+	<div class="card soft">
+		<h3>Striped Table</h3>
+		<script>makeTable('table striped')</script>
+	</div>
+	<div class="card soft">
+		<h3>Lined Table</h3>
+		<script>makeTable('table lined horizontal')</script>
+	</div>
+	<div class="card soft">
+		<h3>Lined Vertical</h3>
+		<script>makeTable('table lined vertical')</script>
+	</div>
+	<div class="card soft">
+		<h3>Lined Border</h3>
+		<script>makeTable('table lined border')</script>
+	</div>
+	<div class="card soft">
+		<h3>Lined Every</h3>
+		<script>makeTable('table lined border vertical horizontal')</script>
+	</div>
+	<div class="card soft">
+		<h3>Lined All</h3>
+		<script>makeTable('table lined all striped')</script>
+	</div>
+</div>
+
+<div class="container">
+	<h2>Forms</h2>
+	<div class="card soft">
+		<h3>Basic Input</h3>
+		<form>
+			<input type="text" placeholder="text" class="form-input">
+			<input type="number" placeholder="number" class="form-input">
+			<input type="search" placeholder="search" class="form-input">
+			<input type="password" placeholder="password" class="form-input">
+		</form>
+		<h3>Form Label &amp; Control</h3>
+		<form >
+			<div class="form-control">
+				<label for="exaple-1" class="form-label">Example 1</label>
+				<input type="text" id="example-1" class="form-input" placeholder="Text">
+			</div>
+			<div class="form-control">
+				<label for="exaple-2" class="form-label">Example 2</label>
+				<input type="text" id="example-2" class="form-input" placeholder="Text">
+			</div>
+			<div class="form-control">
+				<label for="exaple-3" class="form-label">Example 3</label>
+				<input type="text" id="example-3" class="form-input" placeholder="Text">
+			</div>
+			<div class="display-flex flex-align-center">
+				<div class="flex-none">
+					<label for="example-search" class="form-label">Search</label>
+				</div>
+				<div class="flex-stretch">
+					<input type="search" id="example-search" class="form-input" placeholder="Text">
+				</div>
+				<div class="flex-none">
+					<label for="example-search" class="form-label">Search</label>
+				</div>
+				<div class="flex-stretch">
+					<input type="search" id="example-search" class="form-input" placeholder="Text">
+				</div>
+			</div>
+		</form>
+
+		<h3>Buttons</h3>
+
+		<div class="form-control">
+			<button type="button" class="form-button">Button</button>
+		</div>
+		<div class="form-control">
+			<input type="button" class="form-button" value="Button">
+		</div>
+		<div class="form-control">
+			<div class="display-flex flex-align-center">
+				<div class="flex-stretch">Choose on the right</div>
+				<div class="flex-none"><a href="#" class="form-button">Button</a></div>
+			</div>
+		</div>
+		<div class="form-control">
+			<a href="#" class="btn sell">Button</a>
+		</div>
+		<div class="form-control">
+			<a href="#" class="btn inline">Button</a>
+			<a href="#" class="btn inline">Button</a>
+		</div>
+
+		<h3>Hotdog</h3>
+		<div class="hotdog">Hotdog</div>
+		<form>
+			<input type="search" class="hotdog dark">
+		</form>
+		<form>
+			<div class="form-control">
+				<div class="hotdog">
+					<img src="img/email.jpg" alt="" class="icon">
+					<input type="text" id=exaple-email>
+				</div>
+			</div>
+
+			<div class="form-control">
+				<div class="hotdog">
+					<input type="password" id="example-password">
+					<img src="img/password.png" alt="" class="icon">
+				</div>
+			</div>
+		</form>
+
+
+		<h3>Select</h3>
+		<div class="grid">
+			<div class="col-xs-12 col-md-8">
+				
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, deserunt, nostrum. Incidunt blanditiis dolores necessitatibus laudantium vero aut sequi maiores qui nesciunt totam minima, ex, ab dolorem eveniet saepe provident doloremque repellat aliquid pariatur tempora eos laborum omnis placeat optio!</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, deserunt, nostrum. Incidunt blanditiis dolores necessitatibus laudantium vero aut sequi maiores qui nesciunt totam minima, ex, ab dolorem eveniet saepe provident doloremque repellat aliquid pariatur tempora eos laborum omnis placeat optio!</p>
+
+			</div>
+			<div class="col-ex-12 col-md-4">
+				
+				<div class="form-select">
+					<select>
+						<option>Option 1</option>
+						<option>Option 2</option>
+						<option>Option 3</option>
+					</select>
+				</div>
+			</div>
+		</div>
+
+		<h3>Checkbox</h3>
+
+		<div class="form-control">
+			<label> Text
+				<input type="checkbox">
+			</label>
+		</div>
+
+		<div class="form-control">
+			<input type="checkbox" id="check-example">
+			<label for="check-example">Text</label>
+		</div>
+
+		<!-- Checkbox Trick -->
+		<div class="toggle">
+			<input type="checkbox" id="toggle-1" class="hidden">
+			<label for="toggle-1"></label>
+		</div>
+		<div class="toggle" style="font-size: 2em;">
+			<input type="checkbox" id="toggle-2" class="hidden">
+			<label for="toggle-2"></label>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<h2>Products</h2>
+	<div class="well">
+		<h3>Figure</h3>
+		<figure>
+			<img src="https://via.placeholder.com/600x600" alt="">
+			<figcaption>this is an image</figcaption>
+		</figure>
+
+		<h3>Product Figure</h3>
+		<div class="grid gap">
+			<div class="col-xs-12 col-md-4">
+				<figure class="product-item">
+					<div class="product-image">
+						<img src="https://via.placeholder.com/600x600?text=Product" alt="">
+					</div>
+					<figcaption class="product-description">
+						<div class="product-price">&dollar; 3.99</div>
+						<div class="product-title">Banana</div>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="col-xs-12 col-md-8">
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Numquam repudiandae tempora mollitia incidunt laborum saepe enim, natus quo beatae molestias ipsum eum perferendis nulla praesentium nemo repellendus autem iste aliquid. Omnis nesciunt harum quis est quibusdam expedita dolorum corrupti modi?</p>
+				<p>Fugit officiis dolore atque molestias numquam iste iusto laboriosam sint eveniet vitae nulla, quidem minus voluptas, vero animi vel harum illum consequatur, ullam repellat! Dolor cumque consectetur dolorem accusamus deleniti tempore itaque excepturi odio ratione nesciunt temporibus culpa eos, numquam?</p>
+			</div>
+		</div>	
+
+		<h3>Product Gird</h3>
+
+		<div class="grip gap">
+			<div class="col-xs-12 col-md-4">
+				<a href="#">
+					<figure class="product-item">
+						<div class="product-image">
+							<img src="https://via.placeholder.com/600x600?text=Product" alt="">
+						</div>
+						<figcaption>
+							<div class="product price">&dollar;3.99</div>
+							<div class="product-title">Banana</div>
+						</figcaption>
+					</figure>
+				</a>
+			</div>
+
+			<div class="col-xs-12 col-md-4">
+				<a href="#">
+					<figure class="product-item">
+						<div class="product-image">
+							<img src="https://via.placeholder.com/600x600?text=Product" alt="">
+						</div>
+						<figcaption>
+							<div class="product price">&dollar;3.99</div>
+							<div class="product-title">Banana</div>
+						</figcaption>
+					</figure>
+				</a>
+			</div>
+
+			<div class="col-xs-12 col-md-4">
+				<a href="#">
+					<figure class="product-item">
+						<div class="product-image">
+							<img src="https://via.placeholder.com/600x600?text=Product" alt="">
+						</div>
+						<figcaption>
+							<div class="product price">&dollar;3.99</div>
+							<div class="product-title">Banana</div>
+						</figcaption>
+					</figure>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
 </body>
 </html>
