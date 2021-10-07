@@ -5,11 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Style Guide</title>
 
-	<base href="/Users/eimit/Developer/aau/wnm608/zitian.zhou/m04/Styleguide">
+	<base href="/Users/eimit/Developer/aau/wnm608/zitian.zhou/m05/Styleguide">
 
 	<link rel="stylesheet" href="lib/css/styleguide.css">
 	<link rel="stylesheet" href="lib/css/gridsystem.css">
-	<link rel="stylesheet" href="css/storetheme.css">
+	<link rel="stylesheet" href="lib/css/storetheme.css">
 
 </head>
 <body>
@@ -47,16 +47,14 @@
 			<h3>Headings</h3>
 
 			<h4>Code</h4>
-
 			<code class="well">
-				&lt;h1>Heading 1&lt;/h1>
-				&lt;h2>Heading 2&lt;/h2>
-				&lt;h3>heading 3&lt;/h3>
-				&lt;h4>Heading 4&lt;/h4>
-				&lt;h5>heading 5&lt;/h5>
-				&lt;h6>Heading 6&lt;/h6>
+&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;
 			</code>
-
 			<h4>Example</h4>
 
 			<div class="well">
@@ -206,10 +204,10 @@
 			</div>
 
 			<div class="grid">
-				<div class="col-xs 21 col-md-6">
+				<div class="col-xs-12 col-md-6">
 					<div class="well">Col 6</div>
 				</div>
-				<div class="col-xs 21 col-md-6">
+				<div class="col-xs-12 col-md-6">
 					<div class="well">Col 6</div>
 				</div>
 			</div>
@@ -231,8 +229,10 @@
 	</div>
 </div>
 
+<hr>
+
 <div class="grid gap large">
-	<div class="col-ex-8 col-md-4 col-xl-12">
+	<div class="col-xs-8 col-md-4 col-xl-12">
 		<div class="well">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, impedit rem voluptatum consequuntur cum repudiandae accusamus possimus. Quod alias, eius, sint, odio provident maxime laborum, ex quas animi ullam cupiditate.</div>
 	</div>
 <div class="col-xs-4 col-md-4 col-xl-6">
@@ -346,7 +346,7 @@
 	</div>
 
 	<div class="card soft">
-		<h3>Flex nav</h3>
+		<h3>Flex Nav</h3>
 		<script>makeNav('nav flex')</script>
 	</div>
 
@@ -369,16 +369,16 @@
 <!-- Tables -->
 <script>
 	const makeTable = (classes='') => {
-	const head = ['ID', 'Name', 'Email', 'Phone'];
+	const head = ['ID','Office', 'Name', 'Email', 'Phone'];
 	const body = [
-	['501', 'Zitian', 'zitian@email.com' ,'888-8888'],
-	['502', 'Laurel', 'laurel@email.com' ,'555-5555'],
-	['503', 'Harris', 'harris@email.com' ,'333-3333'],
-	];
+	['501', 'Zitian', 'zitian@email.com', '888-8888'],
+	['502', 'Laurel', 'laurel@email.com', '555-5555'],
+	['503', 'Harris', 'harris@email.com', '333-3333'],
+	['504', 'Celine', 'celine@email.com', '222-2222']];
 
 	document.write(`
-		<table class="${classes}"
-			<thead><tr>${head.reduce((r,0)=>r+`<th>${o}</th>`,'')}</tr></thead>
+		<table class="${classes}">
+			<thead><tr>${head.reduce((r,o)=>r+`<th>${o}</th>`,'')}</tr></thead>
 			<tbody>
 			${body.reduce((r,o,i)=>r+
 				`<tr>${[i+1,...o].reduce((r,o)=>r+`<td>${o}</td>`,'')}</tr>`,'')}
@@ -512,7 +512,7 @@
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, deserunt, nostrum. Incidunt blanditiis dolores necessitatibus laudantium vero aut sequi maiores qui nesciunt totam minima, ex, ab dolorem eveniet saepe provident doloremque repellat aliquid pariatur tempora eos laborum omnis placeat optio!</p>
 
 			</div>
-			<div class="col-ex-12 col-md-4">
+			<div class="col-xs-12 col-md-4">
 				
 				<div class="form-select">
 					<select>
@@ -551,6 +551,7 @@
 
 <div class="container">
 	<h2>Products</h2>
+
 	<div class="well">
 		<h3>Figure</h3>
 		<figure>
@@ -579,7 +580,7 @@
 
 		<h3>Product Gird</h3>
 
-		<div class="grip gap">
+		<div class="grid gap">
 			<div class="col-xs-12 col-md-4">
 				<a href="#">
 					<figure class="product-item">
