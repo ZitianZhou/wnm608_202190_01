@@ -81,9 +81,25 @@ a:hover .product-item{
 	font-size: 0.9em;
 }
 
+/*custom for me */
+ul{
+	list-style: none;
+}
 
+.justify-content-spare-evenly {
+	justify-content: center;
+}
+li {
+	margin-right: 20px;
+}
 
+li:last-child {
+	margin-right: 0px;
+}
 
+.text-center{
+	text-align: center;
+}
 
 
 
