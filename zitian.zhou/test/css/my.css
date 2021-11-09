@@ -1,0 +1,192 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family:  "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+.container{
+  width: 100%;
+}
+.clearfix{
+  clear: both;
+  zoom: 1;
+}
+.clearfix:after{
+  content: "\20";
+  display: block;
+  height: 0;
+  clear: both;
+}
+body{
+  background-color: rgb(8, 106, 167);
+}
+.main{
+
+  font-family:  "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+
+}
+header{
+  margin: 0 auto;
+  text-align: center;
+  width:100%;
+  height: 4em;
+  background-color:  rgb(0,82,143);
+  z-index: 100;
+}
+header nav{
+  margin: 0 auto;
+  text-align: center;
+}
+header nav ul
+{
+  list-style:none;
+  margin-left: 30%;
+  text-align: center;
+}
+
+header nav ul li
+{
+  float:left
+}
+
+header nav ul li a
+{
+  color: rgb(255,255,255);
+  display: block;
+  line-height: 3em;
+  padding: 4px 20px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+header nav ul li a:hover
+{
+
+  color: #d5d4da;
+  text-decoration: none;
+}
+.view-window {
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 70vh;
+}
+.flex-justify-center {
+  justify-content: center;
+}
+.bt{
+  float: right;
+  margin-left: 1em;
+}
+.title{
+  color: white;
+  display: block;
+  float: left;
+  line-height: 3em;
+  margin-left: 2em;
+  margin-top: -1em;
+}
+.screen {
+  background-image: url('../img/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: 5% 3%;
+  min-height: 400px;
+  position: relative;
+  background-size: cover;
+  padding: 1vw;
+  margin: 1.5vw;
+}
+
+.screen .items {
+  color: white;
+  position: absolute;
+  top: 200px;
+  left: 100px;
+}
+
+.screen h2 {
+  font-size: 2em
+}
+
+.about{
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+  padding: 3vw 5vw;
+}
+.about h2{
+  margin-bottom: 1vw;
+  color:  rgb(64,52,36) ;
+}
+.aboutimg{
+  height: 250px;
+  float: left;
+  width: 40%;
+
+}
+.aboutimg img{
+  padding: 0.5vw;
+  width: 80%;
+  border: solid 1px black;
+}
+.game{
+  background-color: black;
+  padding-bottom: 2vw;
+}
+.lists h2{
+  padding: 2vw 0vw 0vw 5vw;
+  margin-bottom: 1vw;
+  color: white;
+}
+.abouttxt {
+  margin-right: 5vw;
+}
+.button {
+  background-color: rgb(0,82,143);
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0px;
+}
+.button:hover {
+  padding: 8px 32px;
+  background-color: white;
+  color: black;
+  border: 2px solid #00528F;
+
+}
+.lists{
+  width: 100%;
+  margin: 0 auto 2vw;
+}
+.listimg {
+
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 1%;
+  margin-bottom: 2vw;
+}
+.listimg:hover img{
+  /*transform: scale(1.1);*/
+}
+.listimg img{
+  width: 60%;
+
+}
+.listp{
+  color: white;
+  position: relative;
+  font-size: 14px;
+  font-weight: inherit;
+  margin: 1vw 7vw;
+}
+.clear{
+  clear: both;
+}

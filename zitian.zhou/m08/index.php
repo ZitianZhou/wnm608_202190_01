@@ -1,40 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Zhou Store</title>
+	
+	<title>Zhou's Store</title>
 
-	<link rel="stylesheet" href="lib/css/gridsystem.css">
-	<link rel="stylesheet" href="lib/css/storetheme.css">
-	<link rel="stylesheet" href="lib/css/styleguide.css">
 
+	<?php include "parts/meta.php" ?>
 
 </head>
 <body>
-	<header class="navbar">
-		<div class="container display-flex flex-align-center">
-			<div class="flex-none">
-				<h1>Ps5 Home</h1>
-			</div> 
-			<div class="flex-stretch"></div>
 
-			<nav class="nav flex-none card soft" >
-				<ul class="display-flex" >
-					<li><a href="#article1">PS5 Host (Digital Edition)</a></li>
-					<li><a href="#article2">PS5 Host</a></li>
-					<li><a href="#article3">PS5 Game</a></li>
-					<li><a href="#article4">Cart</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
 
-	<div class="view-window" style="background-image:url(img/p1.jpg)">
-		<h2>PS5 Host (Digital Edition)</h2>
+	<?php include "parts/navbar.php" ?>
+
+	<div class="view-window" style="background-image:url(img/bg2.jpg)">
+		<h2>PS5 Home</h2>
 	</div>
 
-
+	<div class="container">
+		<div class="card soft text-center">
+			<h2>Welcome to my store</h2>
+		</div>
+	</div>
 	<div class="container">
 		<article id="article1" class="article card">
 			<h2>PS5 Host (Digital Edition)</h2>
@@ -62,11 +49,10 @@
 
 	</div>
 
-	<div class="view-window" style="background-image:url(img/bg2.jpg)">
-		<h2>Play Has No Limits</h2>
+	<div class="view-window" style="background-image:url(img/p1.jpg)">
+		<h2>PS5 Host (Digital Edition)</h2>
 	</div>
-
-	<div class="container">
+<div class="container">
 		<div class="card soft dark display-flex">
 			<article id="article2" class="article flex-stretch" style="width:50%">
 			<h2>PS5 Host</h2>
@@ -104,7 +90,7 @@
 	         <h3>The official price : $39</h3>
 	          <br/>
 	          "Spider-Man" is an action game featuring another Spider-Man, Miles Morales,
-	          who many people think of as Peter Parker.The story follows the events of Marvel's "Spider-Man" and sees Miles, a high school student,
+	          who many people think of as Peter Parker. The story follows the events of Marvel's "Spider-Man" and sees Miles, a high school student,
 	          take the place of Peter as the guardian of New York City.High-resolution images of New York City will look even more dazzling.
 			</div>
 		</article>
@@ -130,28 +116,9 @@
 		</article>
 		</div>
 </div>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

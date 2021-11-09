@@ -1,0 +1,81 @@
+html,body{
+  margin:0px;
+  padding:0px;
+  padding-bottom:180px
+}
+
+
+.button{
+  font-weight: 500;
+  font-size: 15px;
+  color: white;
+  background-color: rgb(0, 82, 143);
+  padding: 12px 30px;
+  border-radius: 50px;
+  display: inline-block;
+  border:none;
+  cursor: pointer;
+  outline:none;
+  box-sizing:border-box
+}
+.plus{
+  
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: 1px solid #00528F;
+}
+.plus:hover {
+  padding: 6px 12px;
+  background-color: white;
+  color: black;
+  border: 1px solid #00528F;
+
+}
+.reduce{
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: 1px solid #00528F;
+}
+.reduce:hover {
+  padding: 6px 12px;
+  background-color: white;
+  color: black;
+  border: 1px solid #00528F;
+
+}
+.deleteButton{
+  border: 1px solid #00528F;
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: 1px solid #00528F;
+}
+.deleteButton:hover {
+  padding: 6px 12px;
+  background-color: white;
+  color: black;
+  border: 1px solid #00528F;
+
+}
+
+
+.quantity{
+    margin:0px 5px
+}
+td{
+  vertical-align: middle !important;
+}
+
+.payButton{
+  width:100%;
+  text-align:center;
+  margin-top:15px
+}
+.payButton .button{
+  width:300px
+}
+.banner{
+  width:100%
+}
+.title{
+  text-align:center
+}
