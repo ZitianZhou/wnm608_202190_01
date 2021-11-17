@@ -1,7 +1,13 @@
+<?
+
+include_once "lib/php/functions.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Product Cart</title>
+	<title>Product Checkout</title>
 	<? include "parts/meta.php"; ?>
 </head>
 <body>
@@ -11,11 +17,13 @@
 		<div class="card soft">
 
 			<h2>Product Checkout</h2>
+
 			<a href="./">Cancel</a>
-			<div>Fill in Your Information</div>
-			<div><a href="product_confirmation.php">Pay</a></div>
+
+			<div>Fill in your Information</div>
+			<div><a href="product_actions.php?action=reset-cart">Pay</a></div>
+
 		</div>
 	</div>
-	
 </body>
 </html>

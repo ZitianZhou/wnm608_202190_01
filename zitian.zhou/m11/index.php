@@ -1,3 +1,6 @@
+<?
+include_once "lib/php/functions.php";
+?>
 <!DOCTYPE html>
 <html>
 <head>

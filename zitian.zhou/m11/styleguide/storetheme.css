@@ -149,8 +149,19 @@ li:last-child {
 	text-align: center;
 }
 
+span.badge:not(:empty)::after {
+	content: ')';
+}
+span.badge:not(:empty)::before {
+	content: '(';
+}
 
 
+@media (max-width: 600px) {
+	h2 {
+		font-size: 1em;
+	}
+}
 
 
 
