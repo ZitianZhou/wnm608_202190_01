@@ -88,11 +88,12 @@ function selectAmount($amount=1, $total=10) {
    $output .= "</select>";
    return $output;
 }
+
 function makeAdminList($r,$o){
    return $r.<<<HTML
 <div class="display-flex card flat soft">
    <div class="flex-none image-thumbs">
-      <img src="/images/store/$o->image_thumb">
+      <img src="../img/$o->image_thumb">
    </div>
    <div class="flex-stretch" style="padding:1em;">
       <div><strong>$o->title</strong></div>
