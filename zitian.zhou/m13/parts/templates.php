@@ -93,7 +93,7 @@ function makeAdminList($r,$o){
    return $r.<<<HTML
 <div class="display-flex card flat soft">
    <div class="flex-none image-thumbs">
-      <img src="../img/$o->image_thumb">
+      <img src="img/$o->image_thumb">
    </div>
    <div class="flex-stretch" style="padding:1em;">
       <div><strong>$o->title</strong></div>
@@ -107,6 +107,12 @@ function makeAdminList($r,$o){
 HTML;
 }
 
+function makeRecommend($a) {
+$products = array_reduce($a,'makeProductList');
+echo <<<HTML
+<div class="grid gap productlist">$products</div>
+HTML;
+}
 
 function recommentSimilar($cat,$id=0,$limit=3) {
       $result = MYSQLIQuery("

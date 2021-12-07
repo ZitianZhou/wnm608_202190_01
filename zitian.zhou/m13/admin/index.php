@@ -69,11 +69,11 @@ function showProductPage($product) {
 	$thumbs = explode(",",$product->image_other);
 
 	$thumb_elements = array_reduce($thumbs,function($r,$o){
-		return $r."<img src='/images/store/$o'>";
+		return $r."<img src='img/$o'>";
 	});
 
 $addoredit = $id == 'new'?'Add':'Edit';
-$createorupdate = $id =='new'?'create':'update'
+$createorupdate = $id =='new'?'create':'update';
 
 $productdata = $id == 'new'? '': <<<HTML
 <div class="card soft">
@@ -101,7 +101,7 @@ $productdata = $id == 'new'? '': <<<HTML
 	</div>
 	<div>
 		<strong>Images</strong>
-		<div class="image-thumbs"><img src="/img/$product->image_thumb"></div>
+		<div class="image-thumbs"><img src="img/$product->image_thumb"></div>
 		<div class="image-thumbs">$thumb_elements</div>
 	</div>
 </div>
