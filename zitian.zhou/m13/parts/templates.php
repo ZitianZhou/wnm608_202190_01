@@ -110,11 +110,12 @@ HTML;
 function makeRecommend($a) {
 $products = array_reduce($a,'makeProductList');
 echo <<<HTML
-<div class="grid gap productlist">$products</div>
+<div class="grid gap">$products</div>
 HTML;
 }
 
-function recommentSimilar($cat,$id=0,$limit=3) {
+
+function recommendSimilar($cat,$id=0,$limit=3) {
       $result = MYSQLIQuery("
             SELECT *
             FROM products
